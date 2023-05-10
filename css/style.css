@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap');
+
+:root{
+    --primaryColor: #333533;
+    --secondaryColor: #F5CB5C;
+    --thirdColor: #E8EDDF;
+    --alternativeColor: #CBD2CE;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling Start */
+
+header{
+    height: 100vh;
+    background-color: var(--alternativeColor);
+}
+
+.bg-color{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 2rem 5rem;
+}
+
+.home-intro{
+    height: 70vh;
+}
+
+.home-title{
+    font-size: 8rem;
+}
+
+.home-text{
+    font-size: 1.5rem;
+}
+
+.custom-btn{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: none;
+    border-radius: 10px;
+    padding: .4rem .6rem;
+}
+
+/* Header Styling */
+
+/* About Me Styling Start */
+
+
+/* About Me Styling */
+
+/* Education */
+
+.edu{
+    height: 100vh;
+    position: relative;
+} 
+
+.custom-wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.custom-wrapper .center-line{
+    position: absolute;
+    border-bottom: 650px;
+    border-style: solid;
+    border-color: var(--secondaryColor);
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.custom-wrapper .custom-row{
+    display: flex;
+}
+
+.custom-wrapper .custom-row-1{
+    justify-content: flex-start;
+}
+
+.custom-wrapper .custom-row-2{
+    justify-content: flex-end;
+}
+
+.custom-wrapper .custom-row-3{
+    justify-content: flex-start;
+}
+
+.custom-wrapper .custom-row-4{
+    justify-content: flex-end;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-wrapper .custom-row section{
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.custom-wrapper .custom-row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--secondaryColor);
+    z-index: -1;
+    transform: rotate(45deg);
+    top: 28px;
+}
+
+
+.custom-row section .custom-icon{
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--thirdColor);
+    top: 13px;
+}
+
+.custom-row-1 section .custom-icon{
+    right: -60px;
+}
+
+.custom-row-2 section .custom-icon{
+    left: -60px;
+}
+
+.custom-row-3 section .custom-icon{
+    right: -60px;
+}
+
+.custom-row-4 section .custom-icon{
+    left: -60px;
+}
+
+.custom-row-1 section::before{
+    right: -7px;
+}
+
+.custom-row-2 section::before{
+    left: -7px;
+}
+
+/* Education */
+
+/* Projects */
+
+/* Projects */
+
+/* Skills */
+
+.skills{
+    height: 100svh;
+    /* background-color: var(--alternativeColor); */
+}
+
+.custom-skills-border{
+    background-color: var(--secondaryColor);
+    padding: 2rem;
+}
+
+.custom-skills-margin{
+    margin: 5rem;
+}
+
+.custom-shadow{
+    box-shadow: 5px 10px 18px #888888;
+}
+
+/* Skills */
+
+/* Testimonial Section Styling */
+
+.custom-card-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(2, 41rem);
+    gap: 2rem;
+    margin: 0 5rem;
+}
+
+.custom-card-1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.custom-card-2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.custom-card-3{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.custom-card-4{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    left: 10rem;
+}
+
+.custom-card-5{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    position: relative;
+    right: 10rem;
+}
+
+.custom-card-title{
+    background-color: var(--thirdColor);
+}
+
+.custom-card-text{
+    background-color: var(--thirdColor);
+}
+
+/* Testimonial Section Styling */
+
+/* Contact */
+
+.contact-section{
+    height: 100vh;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 4fr 4fr;
+    gap: 2rem;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+.form1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondaryColor);
+}
+
+.img1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+    background-size: contain;
+}
+
+.box1{
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+}
+
+.box1 > img{
+    bottom: 8.5rem;
+}
+
+/* Contact */
+
+
+/* Footer Styling Start*/
+
+footer{
+    background-color: var(--secondaryColor);
+    position: relative;
+    bottom: 0;
+    height: 40vh;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 3rem 5rem;
+    height: 100%;
+}
+
+.footer-title{
+    grid-column: 1 / 3;
+}
+
+.sec1{
+    grid-column: 7 / 8;
+}
+
+.sec2{
+    grid-column: 8 / 9;
+    width: 15rem;
+}
+
+.sec3{
+    grid-column: 9 / 10;
+}
+
+.hr{
+    position: relative;
+    bottom: 7rem;
+    left: 2rem;
+    width: 70rem;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5rem;
+}
+
+.icons > i{
+    padding: 1rem;
+}
+
+/* Footer Styling */
+
+/* Media Queries */
+
+/* Education & Experience Media Queries */
+
+@media (max-width: 772px) {
+    .custom-wrapper .center-line{
+        left: 40px;
+    }
+
+    .custom-wrapper .custom-row{
+        margin: 30px 0 3px 60px;
+    }
+    .custom-wrapper .custom-row section{
+        width: 100%;
+    }
+
+    .custom-row-1 section::before{
+        left: -7px;
+    }
+    
+    .custom-row-1 section .custom-icon{
+        left: -60px;
+    }
+}
+
+/* Projects Media Queries */
+
+/* @media (max-width: 426px) {
+    .custom-projects{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    }
+} */
+
+/* .custom-projects{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+} */
+
+/* Skills Media Queries */
+
+@media (max-width: 426px) {
+    .skills{
+        height: 100svh;
+    }
+    
+    .custom-skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+}
+
+/*  */
+
+/* Testimonial Media Queries */
+
+@media (max-width: 426px) {
+    .custom-card-grid{
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .custom-card-4{
+        left: 0;
+    }
+
+    .custom-card-5{
+        right: 0;
+    }
+
+    .home-title{
+        font-size: 3rem;
+    }
+}
+
+/* Footer Media Queries */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    background-color: var(--secondaryColor);
+}
+
+.hr{
+    display: none;
+}
+
+.sec1{
+    height: 14%;
+}
+
+.sec3{
+    margin-bottom: 3rem;
+}
+
+.sec1, .sec2, .sec3{
+    display: flex;
+    flex-direction: column;
+}
+
