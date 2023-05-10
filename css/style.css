@@ -11,6 +11,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Custom Colors */
+
+.bg-primary-color{
+    background-color: var(--secondaryColor);
+}
+
+.mb-10{
+    margin-bottom: 10rem;
+}
+
+.mt-10{
+    margin-top: 10rem;
+}
+
+.m-10{
+    margin: 6rem 0 6rem;
+}
+
 /* Header Styling Start */
 
 header{
@@ -67,7 +85,7 @@ header{
 
 .custom-wrapper .center-line{
     position: absolute;
-    border-bottom: 650px;
+    border-bottom: 33em;
     border-style: solid;
     border-color: var(--secondaryColor);
     left: 50%;
@@ -84,14 +102,6 @@ header{
 }
 
 .custom-wrapper .custom-row-2{
-    justify-content: flex-end;
-}
-
-.custom-wrapper .custom-row-3{
-    justify-content: flex-start;
-}
-
-.custom-wrapper .custom-row-4{
     justify-content: flex-end;
 }
 
@@ -184,54 +194,6 @@ header{
 
 /* Skills */
 
-/* Testimonial Section Styling */
-
-.custom-card-grid{
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: repeat(2, 41rem);
-    gap: 2rem;
-    margin: 0 5rem;
-}
-
-.custom-card-1{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.custom-card-2{
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-.custom-card-3{
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-}
-
-.custom-card-4{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    position: relative;
-    left: 10rem;
-}
-
-.custom-card-5{
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-    position: relative;
-    right: 10rem;
-}
-
-.custom-card-title{
-    background-color: var(--thirdColor);
-}
-
-.custom-card-text{
-    background-color: var(--thirdColor);
-}
-
-/* Testimonial Section Styling */
 
 /* Contact */
 
@@ -338,11 +300,20 @@ footer{
 
 /* Media Queries */
 
+/* About Me Media Queries */
+
+@media (max-width:426px) {
+    
+}
+
 /* Education & Experience Media Queries */
 
 @media (max-width: 772px) {
     .custom-wrapper .center-line{
         left: 40px;
+        border-bottom: 57em;
+        border-style: solid;
+        border-color: var(--secondaryColor);
     }
 
     .custom-wrapper .custom-row{
@@ -361,27 +332,12 @@ footer{
     }
 }
 
-/* Projects Media Queries */
-
-/* @media (max-width: 426px) {
-    .custom-projects{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    }
-} */
-
-/* .custom-projects{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-} */
-
 /* Skills Media Queries */
+
 
 @media (max-width: 426px) {
     .skills{
-        height: 100svh;
+        height: 100%;
     }
     
     .custom-skills{
@@ -414,9 +370,28 @@ footer{
     }
 }
 
+/* Contact Media Queries */
+
+@media (max-width: 426px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        height: 76%;
+    }
+
+    .img1{
+        display: none;
+    }
+
+    .box1{
+        display: none;
+    }
+}
+
 /* Footer Media Queries */
 
-.footer{
+@media (max-width: 426px) {
+    .footer{
     display: flex;
     flex-direction: column;
     height: 100svh;
@@ -438,5 +413,8 @@ footer{
 .sec1, .sec2, .sec3{
     display: flex;
     flex-direction: column;
+}    
 }
+
+
 
