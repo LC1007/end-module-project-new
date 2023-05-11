@@ -43,7 +43,7 @@ header{
 }
 
 .home-intro{
-    height: 70vh;
+    height: 70svh;
 }
 
 .home-title{
@@ -224,7 +224,6 @@ header{
     grid-column: 2 / 3;
     width: 100%;
     height: 100%;
-    background-color: teal;
     background-size: contain;
 }
 
@@ -233,7 +232,6 @@ header{
     grid-row: 2 / 5;
     width: 100%;
     height: 100%;
-    background-color: orangered;
 }
 
 .box1 > img{
@@ -280,7 +278,7 @@ footer{
     position: relative;
     bottom: 7rem;
     left: 2rem;
-    width: 70rem;
+    width: 80%;
     border: 2px solid black;
     margin: auto;
 }
@@ -332,6 +330,14 @@ footer{
     }
 }
 
+@media (max-width: 769px) {
+    .custom-wrapper .center-line{
+        border-bottom: 35em;
+        border-style: solid;
+        border-color: var(--secondaryColor);
+    }
+}
+
 /* Skills Media Queries */
 
 
@@ -345,6 +351,12 @@ footer{
         flex-direction: column;
         align-items: center;
     }   
+}
+
+@media (max-width: 769px) {
+    .skills{
+        height: 80svh;
+    }
 }
 
 /*  */
